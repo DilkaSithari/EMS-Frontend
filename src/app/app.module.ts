@@ -18,6 +18,7 @@ import {
 } from '@nebular/theme';
 import { InfoComponent } from './info/info.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     NbIconModule,
     NbSidebarModule.forRoot(),
     NbMenuModule.forRoot(),
+    HttpClientModule,
   ],
 
   providers: [],
