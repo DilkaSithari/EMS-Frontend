@@ -31,6 +31,16 @@ export class AppComponent {
       icon: 'phone-call-outline',
       link: '/contact-us',
     },
+    {
+      title: 'Employee List',
+      icon: 'person-outline',
+      link: '/employees',
+    },
+    {
+      title: 'Add Employee',
+      icon: 'person-add-outline',
+      link: '/create-employee',
+    },
   ];
 
   constructor(private readonly sidebarService: NbSidebarService) {}

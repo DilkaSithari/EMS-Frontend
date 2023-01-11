@@ -10,7 +10,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 
 import {
+  NbCardModule,
   NbIconModule,
+  NbInputModule,
   NbLayoutModule,
   NbMenuModule,
   NbSidebarModule,
@@ -19,6 +21,7 @@ import {
 import { InfoComponent } from './info/info.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 
 @NgModule({
   declarations: [
@@ -28,8 +31,12 @@ import { HttpClientModule } from '@angular/common/http';
     routingComponents,
     InfoComponent,
     ContactUsComponent,
+    CreateEmployeeComponent,
   ],
   imports: [
+    NbInputModule,
+    NbCardModule,
+
     NbLayoutModule,
     BrowserModule,
     ProgressBarModule,
