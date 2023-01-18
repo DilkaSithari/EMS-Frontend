@@ -7,7 +7,7 @@ import { NbMenuItem, NbSidebarService } from '@nebular/theme';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'new-app';
+  title = 'Angular 10 Spring Boot CRUD Full Stack App';
   items: NbMenuItem[] = [
     {
       title: 'Home',
@@ -40,6 +40,11 @@ export class AppComponent {
       title: 'Add Employee',
       icon: 'person-add-outline',
       link: '/create-employee',
+    },
+    {
+      title: 'Update Employee',
+      icon: 'monitor-outline',
+      link: '/update-employee',
     },
   ];
 

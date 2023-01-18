@@ -8,8 +8,10 @@ import { p_circleComponent } from './p_circle/p_circle.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { FormsModule } from '@angular/forms';
 
 import {
+  NbButtonModule,
   NbCardModule,
   NbIconModule,
   NbInputModule,
@@ -22,6 +24,7 @@ import { InfoComponent } from './info/info.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
+import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 
 @NgModule({
   declarations: [
@@ -32,8 +35,11 @@ import { CreateEmployeeComponent } from './create-employee/create-employee.compo
     InfoComponent,
     ContactUsComponent,
     CreateEmployeeComponent,
+    UpdateEmployeeComponent,
   ],
   imports: [
+    NbButtonModule,
+    FormsModule,
     NbInputModule,
     NbCardModule,
 
