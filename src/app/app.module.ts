@@ -25,6 +25,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { UpdateEmployeeComponent } from './update-employee/update-employee.compo
     ContactUsComponent,
     CreateEmployeeComponent,
     UpdateEmployeeComponent,
+    EmployeeDetailsComponent,
   ],
   imports: [
     NbButtonModule,

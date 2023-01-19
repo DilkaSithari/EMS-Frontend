@@ -13,7 +13,27 @@
       <td>{{ employee.firstName }}</td>
       <td>{{ employee.lastName }}</td>
       <td>{{ employee.emailId }}</td>
-      <td><button nbButton status="success">Submit</button></td>
+      <td>
+        <button nbButton status="success" (click)="updateEmployee(employee.id)">
+          Update
+        </button>
+        <button
+          nbButton
+          status="danger"
+          (click)="deleteEmployee(employee.id)"
+          style="margin-left: 5%"
+        >
+          Delete
+        </button>
+        <button
+          nbButton
+          status="primary"
+          (click)="employeeDetails(employee.id)"
+          style="margin-left: 5%"
+        >
+          View
+        </button>
+      </td>
     </tr>
   </tbody>
 </table>

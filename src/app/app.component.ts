@@ -44,7 +44,12 @@ export class AppComponent {
     {
       title: 'Update Employee',
       icon: 'monitor-outline',
-      link: '/update-employee',
+      link: '/update-employee/:id',
+    },
+    {
+      title: 'Employee Details',
+      icon: 'file-text-outline',
+      link: '/employee-details/:id',
     },
   ];
 
