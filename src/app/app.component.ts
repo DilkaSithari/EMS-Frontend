@@ -7,7 +7,7 @@ import { NbMenuItem, NbSidebarService } from '@nebular/theme';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'Angular 10 Spring Boot CRUD Full Stack App';
+  title = 'Employee Management System';
   items: NbMenuItem[] = [
     {
       title: 'Home',
@@ -16,21 +16,7 @@ export class AppComponent {
 
       home: true,
     },
-    {
-      title: 'Users',
-      icon: 'people-outline',
-      url: '/users',
-    },
-    {
-      title: 'Info',
-      icon: 'info-outline',
-      link: '/info',
-    },
-    {
-      title: 'Contact us',
-      icon: 'phone-call-outline',
-      link: '/contact-us',
-    },
+
     {
       title: 'Employee List',
       icon: 'person-outline',
@@ -50,6 +36,21 @@ export class AppComponent {
       title: 'Employee Details',
       icon: 'file-text-outline',
       link: '/employee-details/:id',
+    },
+    {
+      title: 'Users',
+      icon: 'people-outline',
+      url: '/users',
+    },
+    {
+      title: 'Info',
+      icon: 'info-outline',
+      link: '/info',
+    },
+    {
+      title: 'Contact us',
+      icon: 'phone-call-outline',
+      link: '/contact-us',
     },
   ];
 

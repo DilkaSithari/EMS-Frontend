@@ -1,4 +1,8 @@
-import { NgModule } from '@angular/core';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  NO_ERRORS_SCHEMA,
+} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ProgressBarModule } from 'angular-progress-bar';
 import { NgCircleProgressModule } from 'ng-circle-progress';
@@ -26,6 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { ViewEmployeeDetailsComponent } from './view-employee-details/view-employee-details.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +43,7 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
     CreateEmployeeComponent,
     UpdateEmployeeComponent,
     EmployeeDetailsComponent,
+    ViewEmployeeDetailsComponent,
   ],
   imports: [
     NbButtonModule,
@@ -82,5 +88,6 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
 
   providers: [],
   bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
 })
 export class AppModule {}

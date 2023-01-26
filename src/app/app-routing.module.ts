@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { InfoComponent } from './info/info.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 import { UsersComponent } from './users/users.component';
+import { ViewEmployeeDetailsComponent } from './view-employee-details/view-employee-details.component';
 
 const routes: Routes = [
   {
@@ -40,6 +41,10 @@ const routes: Routes = [
   {
     path: 'employee-details/:id',
     component: EmployeeDetailsComponent,
+  },
+  {
+    path: 'view-employee-details',
+    component: ViewEmployeeDetailsComponent,
   },
 ];
 
